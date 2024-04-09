@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;                 /*This is compulsory to intialize the flex container or box*/
+            /* Flex container properties */
+            flex-direction: row; /*the default value is row*/
+            /* flex-direction: column-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+
+            flex-wrap: wrap;         /* Note:- This is use for adjusting the elements according to your device*/
+            
+            /* If you want to use flex-direction: and flex-wrap: both in one use */
+            /* flex-flow: row wrap; */
+
+            justify-content: center;
+            /* justify-content: center;
+            justify-content: space-between;       /* These all for moving the elements to center and making space between them and many more*/
+            /* justify-content: space-around; */
+            /* justify-content: flex-end; */ 
+
+            align-items: center;
+            /* there are more properties of align-items:  */
+        }
+        .boxes{
+            width: 100px;
+            height: 100px;
+            border: 2px solid rgb(24, 52, 237);
+            margin: 10px;
+            padding: 3px;
+            background-color: red;
+            
+        }
+        #box1{
+            /* Flex property for flex items */
+            /* order: 3; */
+                  /* in the items which order is bigger it shows than last in the container*/
+
+            /* flex-grow: 3; */
+            /* int the flex grow you can grow the item according to you       */
+
+            /* flex-shrink: 2; */
+            /* you can shrink the elements according to you */
+
+            flex-basis: 150px;
+            /* flex basics can change the element size */
+
+            /* flex: 2 3 150px; this is short trick to use grow,shrink and basics in one line */
+            
+            /* align-self: start;
+            align-self: flex-end; */
+            /* you can move your element with this */
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>
+        This is Flexbox tutorial
+    </h3>
+    <div class="container">
+        <div class="boxes" id="box1">First Box</div>
+        <div class="boxes" id="box2">Second Box</div>
+        <div class="boxes" id="box3">Third Box</div>
+        <div class="boxes" id="box4">Fourth Box</div>
+        <div class="boxes" id="box5">Fifth Box</div>
+        <div class="boxes" id="box6">Sixth Box</div>
+    </div>
+
+    
+</body>
+</html>

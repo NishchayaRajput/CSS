@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and text shadow</title>
+    <style>
+        .card {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(142, 241, 13);
+            /* border: 2px solid black; */
+            padding: 5px 10px;
+            margin: 10px 30px;
+            box-shadow: 10px 10px 8px blue;             /*in the box shadow the first is the capicity and the third one is the dencity of blur effect and in the last the color */
+
+            /* box-shadow: -10px -10px 8px blue;       apply the - in your unit the shadow will apply int the top of your box    */
+            
+            /*there is also a fourth unit called splred radius(falana)*/
+
+            /* all mixes is */
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+
+            /* if you want box shadow inside in the box use this */
+            /* box-shadow: inset 2px 3px blue; */
+        }
+        .card h2{
+            text-shadow: 2px 3px red;              /*the text shadow is also work as box shadow*/
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque repellendus relorem10
+                cusandae vitae at hic, illoLorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio et
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque repellendus rlorem10
+                ecusandae vitae at hic, illo Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio et
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi itaque repellendus recusandae vitae at
+                hic, illo Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio odio etlorem10
+
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

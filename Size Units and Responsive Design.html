@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            height: 100vh;        /* view port height*/
+            width: 100vw;         /* view port widhth*/
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            font-size: 10em;       /*This unit is basically multiply the unit for assume you can set the font size 1px and use 10em so the the is 1*10 */
+        }
+        #second{
+            font-size: 3rem;
+            padding: 3rem;     /* the rem unit is basically work from the html size declarezation and its also work like em */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+    
+</body>
+</html>

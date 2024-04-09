@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 5, Creating layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: cyan;
+            border: 2px solid black;
+            padding: 12px 23px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" class="item">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ex obcaecati deserloremunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia assumenda sint fuga quae, exercitationem cum iusto soluta excepturi maxime eos illum tempore quisquam. Et autem consequuntur soluta. Labore suscipit voluptate vel. Sapiente illum explicabo est accusantium consectetur vero tempore beatae fugit odit non ullam, quod quam nesciunt, saepe quos, repudiandae magni porro asperiores deleniti! Optio provident asperiores magnam deserunt, laudantium accusamus explicabo quam magni doloremque dolor at repellendus ipsa deleniti ut repellat vel quas, blanditiis dicta voluptate quaerat voluptas voluptatum! Nostrum corporis aliquid voluptatibus dolore ratione sint temporibus doloribus hic soluta voluptate recusandae accusamus sapiente iure tenetur quibusdam quasi, labore quam iste quo ab laboriosam minus placeat obcaecati vero! Voluptas modi placeat ratione beatae facere saepe officia nostrum? Esse delectus quaerat earum nulla magnam accusantium eligendi, rerum ex sunt obcaecati illo accusamus molestias, libero repellat nihil fuga dolorem sapiente at error. Distinctio soluta esse commodi maiores impedit adipisci odit nihil a. Incidunt nobis obcaecati at ut dicta voluptatem fugit labore suscipit? Earum eius qui culpa! Quo perferendis, alias ea architecto quaerat quia eveniet delectus quidem corporis totam nesciunt blanditiis expedita quos commodi. Esse praesentium eius repudiandae harum quia quaerat fugit labore, reiciendis quam officiis error. Atque tenetur aperiam sit excepturi possimus molestias, soluta ut accusantium voluptate vitae sunt ipsa perferendis iste quod quasi eaque odio. Voluptatem hic ad accusantium voluptatum velit ipsum fugiat magni, mollitia labore numquam ducimus illo, incidunt eveniet tempore illum tenetur! Molestiae dolores enim quos ratione voluptas ducimus necessitatibus fugit. Aspernatur labore dolorum, amet distinctio saepe repudiandae, similique illo maiores explicabo inventore deserunt dolor, eum voluptatum molestiae! Sapiente blanditiis repellendus voluptates eos hic nulla saepe expedita, tenetur sint rem. Quod, cupiditate praesentium consequuntur cum debitis possimus, incidunt delectus a, molestiae nobis asperiores aliquid dicta ratione nemo? Ipsam id dolor quaerat placeat at dignissimos dicta explicabo iure earum. animi odit similique praesentium earum unde, cum temporibus.</div>
+        <div id="aside" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptates dolorum aspernatur fugit repellendus ex assumenda obcaecati pariatur, minus temporibus?
+        </div>
+        <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eaque sit facilis consectetur!</footer>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    </div>
+    
+</body>
+</html>

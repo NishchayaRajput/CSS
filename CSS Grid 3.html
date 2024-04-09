@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 3-spanning</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+
+            /* grid-column-gap: 2rem; */
+            /* grid-row-gap: 2rem; */
+            /*you can also use gap in your rows and colums*/
+            grid-gap: 1rem;
+        }
+
+        .item {
+            border: 2px solid black;
+            background-color: pink;
+            padding: 23px;
+        }
+        /* if you want to target some element you can target with the help of suedo selectors */
+        .item:first-child{
+            grid-column-start: 1;    /*its merge the two elements*/
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+        <div class="item">hey that's me</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid-2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: 1fr 1fr 4fr ;          /*the value set like 1 2 3 4 rows and continue like that*/
+            grid-auto-rows: 2fr;       /*this is apply all the rows in which above you don't set the value*/
+            
+            /* note:-you can also use repeat in grid template for target more elements */
+            /* grid-template-columns: repeat(3, 4fr); */
+
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 2rem;
+
+        }
+        .box{
+            background-color: red;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is box-1</div>
+        <div class="box">this is box-2</div>
+        <div class="box">this is box-3</div>
+        <div class="box">this is box-4</div>
+        <div class="box">this is box-5</div>
+        <div class="box">this is box-6</div>
+        <div class="box">this is box-7</div>
+        <div class="box">this is box-8</div>
+        <div class="box">this is box-9</div>
+    </div>
+</body>
+</html>

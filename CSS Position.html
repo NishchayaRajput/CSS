@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS postions</title>
+    <style>
+        .container{
+            border: 2px solid black;
+        }
+        .boxes{
+            border: 2px solid green;
+            height: 100px;
+            width: 200px;
+            display: inline-block;
+            margin: 2px;
+           
+        }
+        #box3{
+            top: 40px;
+            left: 30px;
+            /* position: relative;        when the position is relative the box is shifting from its corrent position */
+            position: absolute;     /* when the position is relative the box is shifting from its parent or container and over lap the 1st box*/
+            /* position: fixed;   when you want fixed the box or element in parent you can use fixed */
+            /* position: sticky;   when you want freeze the element in site to the use top,bottom,left,right */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="boxes" id="box1">1</div>
+        <div class="boxes" id="box2">2</div>
+        <div class="boxes" id="box3">3</div>
+        <div class="boxes" id="box4">4</div>
+
+    </div>
+
+
+</body>
+
+</html>

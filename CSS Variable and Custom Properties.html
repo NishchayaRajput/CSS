@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and Custom Properties</title>
+    <style>
+        :root{
+            --primary-color:khaki;   /*you can also make a global variable in :root    and its apply anywhere*/
+            --secondary-color:pink;
+            --max-width:400px;            /*you can also make variable like max width,height or something like that*/
+        }
+        .container{
+            display: flex;
+            background-color: var(--primary-color);
+            max-width: var(--max-width);
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .box{
+            --box-color: pink;         /*you can create variavble like this this is only work in this box class because this is local variable*/
+            height: 150px;
+            width: 150px;
+            border: 2px solid red;
+            margin: 5px 6px;
+            box-shadow: 3px 4px ;
+            background-color: var(--box-color);           /*to apply  the variable you can use var(variable name)*/
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    
+</body>
+</html>

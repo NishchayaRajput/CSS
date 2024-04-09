@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+    <style>
+        .container{
+            border: 2px solid mediumseagreen;
+        }
+        .box{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            animation-name: Peter2;                 /*when you want to use animation you want to give the animation name*/
+            animation-duration: 3s;      /*this is the duration or speed*/
+            animation-iteration-count: 3;         /*this is the rapetaion*/
+            /* animation-fill-mode:  this is also a animation mode*/
+            animation-timing-function: ease-in-out;          /*this is about the timeing of animation*/
+            /* animation-delay: 3s;   if you want to delay your animation you can use this */
+            /* animation-direction: reverse;        this is the direction of your animation  */
+
+            /*this is short trick method to set the animation*/
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            /* like this */
+
+            /* animation: Peter 3s ease-in 3s 3 backwards; */
+        }
+        @keyframes Peter2{
+            0%{
+                top: 0px;
+                left: 0px;
+
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+
+            }
+            75%{
+                top: 250px;
+                left: 250px;
+
+            }
+            100%{
+                top: 0px;
+                left: 250px;
+
+            }
+        }
+        @keyframes Peter{
+            from{
+                width: 150px;             
+            }
+            to{
+                width: 700px;
+            }
+        }
+        /* There are more way to do animation tricks for more info watch video no. 36 */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Hi this is about Animation effects and keyframes
+        </div>
+    </div>
+    
+</body>
+</html>

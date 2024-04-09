@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .container{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            
+        }
+        #box1{
+            background-color: red;
+            position: relative;
+            top: 49px;
+            z-index: 15;
+
+        }
+        #box2{
+            /* when you want to box1 cover box2 the z-index of box1 is grater then the box2
+            if you want to bo21 cover box1 the z-index of box2 is grater then the box1 */
+            /* z-index: work only for position absolute,fixed,relative means it works upon position */
+            background-color: blue;
+            position: relative;
+            top: 14px;
+            z-index: 14;
+            /* display: none; */                      /*when youn use this element space don't show*/
+            /* visibility: hidden; */                /*when youn use this element space show but element is hidden*/
+
+        }
+        #box3{
+            background-color: purple;
+
+        }
+        #box4{
+            background-color: green;
+
+        }
+
+    </style>
+ </head>
+ <body>
+    <div class="container" id="box1"></div>
+    <div class="container" id="box2"></div>
+    <div class="container" id="box3"></div>
+    <div class="container" id="box4"></div>
+    
+ </body>
+ </html>

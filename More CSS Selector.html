@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More css selector</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        /* div p{
+            color: red;
+            background-color: aqua;
+        } */
+        /*the greater than sign is use when you want to only target paragraph which is inside in div*/
+        /* div > p{                                        
+            background-color: black;
+            color: white;
+        } */
+        /* the + sign is use when you want to target a paragraph which is sibling to the div */
+        div + p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is about more selectors in css</h1>
+    <div class="container">
+        <div class="box">
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+            <p>This is a paragraph</p>
+            <ul>
+                <li><p>this is another paragraph</p></li>
+            </ul>
+
+        </div>
+    </div>
+    <p>hello</p>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(197, 247, 247);
+            color: black;
+            font-family: 'Titillium Web', sans-serif;
+            
+        }
+        /*You can use the before and after for setting the image in background and many more things*/
+        header::before{
+            content: "";          /*The content is use for write something*/
+            background: url('https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;                 /*you know that the you can use z-index for clearly visible the text on your background */
+
+            opacity: 0.4;       /*you can use the opacity for fade your background image*/
+            
+        }
+
+        li {
+            list-style: none;
+            padding: 2px 36px;
+
+        }
+
+        .navigation {
+            display: flex;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 150px;
+            align-items: center;
+            height: 200px;
+            justify-content: center;
+            font-size: 20px;
+        }
+        h1{
+            font-size: 40px;
+
+        }
+        p{
+            text-align: center;
+        }
+
+        /* section::before{
+            content: "this is the section before";
+        } */
+
+        /* section::after{
+            content: "thsi is the section after";
+        } */
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navigation">
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Services</li>
+            </ul>
+
+        </nav class="navbar">
+
+    </header>
+    <section>
+        <h1>Hey This is a Free Online course tutorial</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem sit maiores saepe consectetur
+            necessitatibus quia et, ipsam doloremque unde architecto repellat, itaque quibusdam est .
+            
+        </p>
+        
+    </section>
+    <hr>
+
+</body>
+
+</html>

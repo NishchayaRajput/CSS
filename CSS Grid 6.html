@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid 6 , Media Queries</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside'
+            'footer footer footer footer';
+
+        }
+        @media only screen and (max-width:300px){
+            body{
+                background-color: blue;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            body{
+                background-color: red;
+            }
+            .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section section'
+            'footer footer footer footer';
+
+        }
+        aside{
+            display: none;
+        }
+       
+        }
+        @media (min-width:500px) and (max-width:800px){
+            body{
+                background-color: black;
+
+            }
+            .container{
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer';
+
+        }
+        }
+        @media (min-width:800px){
+            body{
+                background-color: khaki;
+            }
+        }
+        .br{
+            border: 2px solid black;
+            padding: 23px;
+            background-color: aqua;
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="br">
+            Home About Contact Us
+        </nav>
+        <section class="br">
+            <h3>
+                Hey' That's me Baldev
+            </h3>
+        </section>
+        <aside class="br">
+            <h1>Keep Going</h1>
+        </aside>
+        <footer class="br">
+            Lorem ipsum dolor sit amet.
+        </footer>
+    </div>
+    
+</body>
+</html>
